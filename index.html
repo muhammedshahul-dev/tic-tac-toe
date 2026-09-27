@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="board-container">
 
+  <div class="game-container">
+    <h1>Tic-Tac-Toe</h1>
+
+    <!-- Player Name Inputs -->
+    <div class="player-inputs">
+      <input type="text" id="player1-input" placeholder="Player 1 Name" value="Player 1">
+      <input type="text" id="player2-input" placeholder="Player 2 Name" value="Player 2">
+      <button id="start-btn">Start / Update Names</button>
     </div>
-    <script src="script.js"></script>
+
+    <!-- Turn / Game Over Message Banner -->
+    <h2 id="status-display">Click 'Start' or pick a square!</h2>
+
+    <!-- 3x3 Grid Board -->
+    <div id="board-container" class="grid"></div>
+
+    <!-- Control Buttons -->
+    <button id="restart-btn" class="control-btn">Restart Game</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
